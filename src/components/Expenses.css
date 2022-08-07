@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.expenses {
+  padding: 1rem;
+  background-color: rgb(31, 31, 31);
+  margin: 2rem auto;
+  width: 50rem;
+  /*max-width: 100%;*/
+  width: 70%;
+  border-radius: 7px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 25);
+}
