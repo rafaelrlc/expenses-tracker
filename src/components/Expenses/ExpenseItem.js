@@ -21,7 +21,6 @@ const ExpenseItem = (props) => {
       <button className="button-update" onClick={clickHandler}>
         Update
       </button>
- 
     </Card>
   );
 };

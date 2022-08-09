@@ -6,15 +6,13 @@ const ExpenseFilter = (props) => {
   const [enteredYear, setEnteredYear] = useState("");
 
   const getSelectedYear = (event) => {
+    console.log(event.target.value)
     setEnteredYear(event.target.value);
+    console.log(enteredYear)
+    props.onSaveExpenseYear(enteredYear);
   };
 
-  const searchForYear = () => {
-    const yearSearch = {
-      year: enteredYear,
-    };
-    props.onSaveExpenseYear(yearSearch);
-  };
+
 
   return (
     <Card className="expense-filter">
@@ -26,9 +24,6 @@ const ExpenseFilter = (props) => {
             <option value='2020'>2020</option>
             <option value='2019'>2019</option>
           </select>
-        </div>
-        <div>
-          <button onClick={searchForYear}>Filter by Year</button>
         </div>
       </div>
       <div className="amount-per-year">

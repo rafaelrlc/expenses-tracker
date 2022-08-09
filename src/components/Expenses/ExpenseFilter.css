@@ -14,6 +14,16 @@
   margin-top: 6px;
 }
 
+.year-choose {
+  font-size: 1rem;
+  padding: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  color : white;
+  border: 0.2px solid white;
+}
+
+
+
 option {
   color: black;
 }
