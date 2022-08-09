@@ -20,8 +20,12 @@ const ExpenseFilter = (props) => {
     <Card className="expense-filter">
       <div className="year-choice">
         <div className="year-div">
-          <label htmlFor="expense-title">Year:</label>
-          <input type="text" onChange={getSelectedYear} />
+          <select className="year-choose" onChange={getSelectedYear}>
+            <option value='2022'>2022</option>
+            <option value='2021'>2021</option>
+            <option value='2020'>2020</option>
+            <option value='2019'>2019</option>
+          </select>
         </div>
         <div>
           <button onClick={searchForYear}>Filter by Year</button>
