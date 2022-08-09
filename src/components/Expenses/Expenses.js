@@ -4,9 +4,13 @@ import "./Expenses.css";
 import ExpenseFilter from "./ExpenseFilter";
 
 const Expenses = (props) => {
+  const saveYearSearch = (enteredYear) => {
+    console.log(enteredYear);
+  };
+
   return (
     <Card className="expenses">
-      <ExpenseFilter></ExpenseFilter>
+      <ExpenseFilter onSaveExpenseYear={saveYearSearch}></ExpenseFilter>
       <ExpenseItem
         titulo={props.item[0].title}
         valor={props.item[0].amount}

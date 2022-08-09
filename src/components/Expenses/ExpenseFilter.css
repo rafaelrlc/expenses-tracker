@@ -8,7 +8,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.year-div {
+  margin-top: 6px;
 }
 
 .amount-per-year {
@@ -16,10 +19,9 @@
   background-color: rgb(96, 199, 127);
   height: 12em;
   border-radius: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 2rem;
-
+  padding: 1.75rem;
   color: black;
 }
 
@@ -45,5 +47,15 @@ label {
 }
 
 input {
-  width: 5rem;
+  width: 4rem;
+}
+
+button {
+  color: white;
+  background-color: #4b4b4b;
+  font-size: 1.1rem;
+  border: 0.2px solid white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
 }

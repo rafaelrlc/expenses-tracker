@@ -2,21 +2,6 @@ import React, { useState } from "react";
 import "./ExpenseForm.css";
 import Card from "../../UI/Card";
 const ExpenseForm = (props) => {
-  const [enteredTitle, setEnteredTitle] = useState("");
-  const [enteredAmount, setEnteredAmount] = useState("");
-  const [enteredDate, setEnteredDate] = useState("");
-
-  const titleChangeHandler = (event) => {
-    //o event é o que mudou , ele é chamado automaticamente quando a funcao é ativada
-    setEnteredTitle(event.target.value);
-  };
-  const amountChangeHandler = (event) => {
-    setEnteredAmount(event.target.value);
-  };
-  const dateChangeHandler = (event) => {
-    setEnteredDate(event.target.value);
-  };
-
   //const [userInput, setUserInput] = useState({
   //enteredTitle: "",
   //enteredAmount: "",
@@ -40,6 +25,21 @@ const ExpenseForm = (props) => {
   //return {...prevState, enteredDate: event.target.value}
   //})
   //};
+
+  const [enteredTitle, setEnteredTitle] = useState("");
+  const [enteredAmount, setEnteredAmount] = useState("");
+  const [enteredDate, setEnteredDate] = useState("");
+
+  const titleChangeHandler = (event) => {
+    //o event é o que mudou , ele é chamado automaticamente quando a funcao é ativada
+    setEnteredTitle(event.target.value);
+  };
+  const amountChangeHandler = (event) => {
+    setEnteredAmount(event.target.value);
+  };
+  const dateChangeHandler = (event) => {
+    setEnteredDate(event.target.value);
+  };
 
   const submitHandler = (event) => {
     event.preventDefault();
