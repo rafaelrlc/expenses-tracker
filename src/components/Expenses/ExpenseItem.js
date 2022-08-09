@@ -17,10 +17,11 @@ const ExpenseItem = (props) => {
       <div className="expense-itemdescription">
         <h2>{title}</h2>
       </div>
-      <div className="expense-itemprice">${props.valor}</div>
+      <div className="expense-itemprice">${props.valor}</div>  
       <button className="button-update" onClick={clickHandler}>
         Update
       </button>
+ 
     </Card>
   );
 };
