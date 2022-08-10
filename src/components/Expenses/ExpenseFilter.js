@@ -1,8 +1,8 @@
-import React, { useState } from "react";
 import "./ExpenseFilter.css";
 import Card from "../UI/Card";
 
 const ExpenseFilter = (props) => {
+
   const getSelectedYear = (event) => {
     props.onSaveExpenseYear(event.target.value);
   };
