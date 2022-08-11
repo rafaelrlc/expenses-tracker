@@ -10,6 +10,30 @@ const INITIAL_EXPENSES = [
     title: "Car Insurance",
     amount: 250.45,
   },
+  {
+    id: "e2",
+    date: new Date(2020, 10, 21),
+    title: "Rent",
+    amount: 500.45,
+  },
+  {
+    id: "e3",
+    date: new Date(2022, 10, 22),
+    title: "Credit Card",
+    amount: 100.45,
+  },
+  {
+    id: "e4",
+    date: new Date(2021, 3, 23),
+    title: "Car Insurance",
+    amount: 250.45,
+  },
+  {
+    id: "e5",
+    date: new Date(2019, 2, 24),
+    title: "Food",
+    amount: 800.35,
+  },
 ];
 
 const App = () => {

@@ -10,6 +10,11 @@ const Expenses = (props) => {
   const saveYearSearch = (enteredYear) => {
     setFilteredYear(enteredYear);
   };
+  
+  const filteredExpense = props.item.filter(expense => {
+    return expense.date.getFullYear().toString() === filteredYear || filteredYear === "all";
+  })
+
 
   return (
     <div>
@@ -18,9 +23,9 @@ const Expenses = (props) => {
           selected={filteredYear}
           onSaveExpenseYear={saveYearSearch}
         ></ExpenseFilter>
-
-        {props.item.map((expense) => (
+        {filteredExpense.map((expense) => (
           <ExpenseItem
+            key={expense.id}  //key is used to identify each element in the array
             title={expense.title}
             date={expense.date}
             amount={expense.amount}
