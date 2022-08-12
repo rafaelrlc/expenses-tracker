@@ -53,17 +53,22 @@ label {
   cursor: pointer;
   border: none;
   padding: 1rem 1.2rem;
-  background-color: #4cd691;
+  background-color: #369163;
   color: white;
   border-radius: 10px;
 }
 
-.new-expense button:hover,
-.new-expense button:active {
-  background-color: #369163;
-  border-color: #369163;
+.new-expense__button_add:hover,
+.new-expense__button_add:active {
+  color: rgb(191, 191, 191);
 }
 
-.new-expense__button_add:hover {
-  color: rgb(43, 209, 107);
+.new-expense__button_cancel:hover,
+.new-expense__button_cancel:active {
+  color: rgb(191, 191, 191);
 }
+
+
+
+
+

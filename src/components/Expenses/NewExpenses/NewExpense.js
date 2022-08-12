@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NewExpense.css";
-import ExpenseAddButton from "../ExpenseAddButton";
+import ExpenseAddButton from "./ExpenseAddButton";
 
 import ExpenseForm from "./ExpenseForm";
+
 const NewExpense = (props) => {
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
@@ -14,16 +15,27 @@ const NewExpense = (props) => {
     props.onAddExpense(expenseData);
   };
 
-  ////////////////////////////////////////////////////////////////////////////////
-  const addButton = <ExpenseAddButton></ExpenseAddButton>;
-  const newExpeneseForm = (
-    <ExpenseForm onSaveExpense={saveExpenseDataHandler}></ExpenseForm>
-  );
+  const changeScreen = () => {
+    if (newExpenseForm === addButton) {
+      changeOpiton(formExpense)
+    }
+    else {
+      changeOpiton(addButton)
+    }
+  }
 
-  let newExpense = null;
+  const goBack = () => {
+    changeOpiton(addButton)
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////
+  const addButton = <ExpenseAddButton changeTela={changeScreen} ></ExpenseAddButton>;
+  const formExpense = (<ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={goBack}></ExpenseForm>);
+
+  const [newExpenseForm, changeOpiton] = useState(addButton)
   ////////////////////////////////////////////////////////////////////////////////
 
-  return <div className="new-expense">{newExpeneseForm}</div>;
+  return <div className="new-expense">{newExpenseForm}</div>;
 };
 
 export default NewExpense;

@@ -29,8 +29,8 @@ option {
 }
 
 .amount-per-year {
-  display: flex;
-  background-color: rgb(96, 199, 127);
+  display: none;
+  background-color:  rgb(151, 234, 151);
   height: 12em;
   border-radius: 10px;
   justify-content: space-around;
@@ -43,11 +43,11 @@ option {
   display: flex;
   flex-direction: column-reverse;
   background-color: white;
-  border: 0.2px solid rgb(10, 70, 5);
-  border-radius: 10px;
+  border: 0.1px solid rgb(10, 70, 5);
+  border-radius: 12px;
   width: 1.175em;
   height: 9rem;
-  background-color: rgb(149, 214, 149);
+  background-color: #76e685;
 }
 
 .month-name {
@@ -64,12 +64,4 @@ input {
   width: 4rem;
 }
 
-button {
-  color: white;
-  background-color: #4b4b4b;
-  font-size: 1.1rem;
-  border: 0.2px solid white;
-  border-radius: 10px;
-  padding: 0.5rem;
-  cursor: pointer;
-}
+

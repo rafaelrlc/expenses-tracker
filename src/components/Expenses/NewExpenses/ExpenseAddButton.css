@@ -1,0 +1,34 @@
+.add-button-box {
+  margin: 2rem auto;
+  width: 50rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  background-color: #4cd691;
+  border-radius: 7px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 25);
+  height: auto;
+}
+
+.add-expense-button {
+  color : white;
+  width: 28%;
+  align-self: center;
+  background-color: #1ea05f;
+  border: none;
+  padding: 1.25rem;
+  border-radius: 10px;
+  font-size: 1.0rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.add-expense-button:hover {
+  background-color: #1ea562;
+  
+}
+
+
