@@ -30,7 +30,7 @@ const INITIAL_EXPENSES = [
   },
   {
     id: "e5",
-    date: new Date(2019, 2, 24),
+    date: new Date(2020, 2, 24),
     title: "Food",
     amount: 800.35,
   },
