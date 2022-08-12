@@ -1,34 +1,27 @@
 .add-button-box {
   margin: 2rem auto;
   width: 50rem;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   padding: 1.25rem;
-  background-color: #4cd691;
-  border-radius: 7px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 25);
+  background-color: #a1d8fb;
   height: auto;
 }
 
 .add-expense-button {
-  color : white;
-  width: 28%;
+  color: white;
+  width: 30%;
   align-self: center;
-  background-color: #1ea05f;
+  background-color: #5183df;
   border: none;
   padding: 1.25rem;
   border-radius: 10px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
 }
 
-
-
 .add-expense-button:hover {
-  background-color: #1ea562;
-  
+  background-color: #4073d1;
 }
-
-

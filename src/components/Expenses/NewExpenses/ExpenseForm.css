@@ -1,9 +1,9 @@
 .new-expense__controls {
   padding: 1.3rem;
-  background-color: #4cd691;
-  margin: 2rem auto;
+  background-color: #a1d8fb;
+  margin: 1.25rem auto;
   width: 50rem;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -42,33 +42,30 @@ label {
   font: inherit;
   cursor: pointer;
   border: none;
-  padding: 1rem 1.2rem;
-  background-color: #369163;
+  padding: 1rem 1.1rem;
+  background-color: #5183df;
   color: rgb(255, 255, 255);
   border-radius: 10px;
+  font-weight: bold;
 }
 
 .new-expense__button_cancel {
   font: inherit;
   cursor: pointer;
   border: none;
-  padding: 1rem 1.2rem;
-  background-color: #369163;
+  padding: 1rem 1.1rem;
+  background-color: #5183df;
   color: white;
   border-radius: 10px;
+  font-weight: bold;
 }
 
 .new-expense__button_add:hover,
 .new-expense__button_add:active {
-  color: rgb(191, 191, 191);
+  background-color: #4073d1;
 }
 
 .new-expense__button_cancel:hover,
 .new-expense__button_cancel:active {
-  color: rgb(191, 191, 191);
+  background-color: #4073d1;
 }
-
-
-
-
-

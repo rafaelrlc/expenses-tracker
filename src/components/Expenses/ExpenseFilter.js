@@ -1,14 +1,14 @@
 import "./ExpenseFilter.css";
-import Card from "../UI/Card";
+//import Card from "../UI/Card";
 
 const ExpenseFilter = (props) => {
-
   const getSelectedYear = (event) => {
     props.onSaveExpenseYear(event.target.value);
   };
 
   return (
-    <Card className="expense-filter">
+    <div className="expense-filter">
+      <h5 className="by-year">Filter by Year</h5>
       <div className="year-div">
         <select
           className="year-choose"
@@ -22,23 +22,7 @@ const ExpenseFilter = (props) => {
           <option value="all">...</option>
         </select>
       </div>
-      <div className="amount-per-year">
-        <div className="month-div">
-          <h5 className="month-name">JAN</h5>
-        </div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-        <div className="month-div"></div>
-      </div>
-    </Card>
+    </div>
   );
 };
 
