@@ -1,10 +1,8 @@
-# Getting Started with Create React App
+# EXPENSES TRACKERS
+PRIMEIRO PROJETO EM REACT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![ezgif-4-d697d60710](https://user-images.githubusercontent.com/105018495/187016930-ed2cf5fa-1f86-4cdc-b6a5-b179220ae2be.gif)
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
