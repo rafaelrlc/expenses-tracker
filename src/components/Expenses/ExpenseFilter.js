@@ -8,7 +8,7 @@ const ExpenseFilter = (props) => {
 
   return (
     <div className="expense-filter">
-      <h5 className="by-year">Filter by Year</h5>
+      <h5 className="by-year">Filtrar por Ano</h5>
       <div className="year-div">
         <select
           className="year-choose"
