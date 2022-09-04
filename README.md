@@ -1,6 +1,8 @@
 # EXPENSES TRACKERS
 PRIMEIRO PROJETO EM REACT
 
+(muitos commits pq to usando dual)
+
 ![ezgif-4-d697d60710](https://user-images.githubusercontent.com/105018495/187016930-ed2cf5fa-1f86-4cdc-b6a5-b179220ae2be.gif)
 
 
